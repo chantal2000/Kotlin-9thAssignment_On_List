@@ -72,3 +72,5 @@ fun regist(CObjects:Car):Double{
   return average
 }
 
+
+
