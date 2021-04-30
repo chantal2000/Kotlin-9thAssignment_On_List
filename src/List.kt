@@ -4,14 +4,13 @@ println(Av(mutableListOf<Double>(50.0,46.0,30.0,40.0,78.0,88.0)))
   println(Av(mutableListOf<Double>(50.0,46.0,30.0,40.0,78.0,88.0))/6)
 sorted()
 
-}
 humanBeing()
   var car1=Car("car128930",50.0)
   var car2=Car("car16743",79.0)
   var car3=Car("car37845",64.0)
   var car4=Car("car47838",80.0)
- var av=(car1.mileage+car2.mileage+car3.mileage+car4.mileage)/4
- println(av)
+ var average=(car1.mileage+car2.mileage+car3.mileage+car4.mileage)/4
+ println(average)
 
 }
 fun Even(Str:List<String>):List<String> {
@@ -45,7 +44,6 @@ fun sorted() {
 }
 
 
- data class Person(var name: String, var age: Int, var height: Int, var weight: Int)
 fun humanBeing() {
   var people = mutableListOf(
     Person("Chantal", 29, 56, 51) ,
@@ -66,11 +64,11 @@ data class CarsLists(
   var registration: List<Car>,
   var mileage: List<Double>
 )
-fun Reg(CObjects:Car):Double{
+fun regist(CObjects:Car):Double{
   var cars= mutableListOf<Car>(CObjects)
   var registration= mutableListOf<Car>()
   var mileage= mutableListOf<Double>()
-  var av=mileage.average()
-  return av
+  var average=mileage.average()
+  return average
 }
 
